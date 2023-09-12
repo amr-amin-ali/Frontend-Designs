@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html
+	lang="ar"
+	dir="rtl">
+	<head>
+		<!-- Bootstrap css -->
+		<!--   -Local copy -->
+		<link
+			rel="stylesheet"
+			href="/assets/bootstrap-5.3.1-dist/css/bootstrap.rtl.css" />
+		<!--   -CDN copy -->
+		<!-- <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous"
+            /> -->
+		<!-- //Bootstrap css -->
+		<link
+			rel="stylesheet"
+			href="/assets/style.css" />
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<title>New Case</title>
+	</head>
+
+	<body>
+		<!-- Start body -->
+
+		<!-- Header -->
+		<section class="container-fluid">
+			<header class="container">
+				<div class="row">
+					<div class="col-3">
+						<img
+							class="header-left-img"
+							src="/assets/images/Ministry_of_internals.png"
+							alt="" />
+					</div>
+					<div
+						class="col-6 text-center d-flex flex-column justify-content-center align-content-center">
+						<h1 class="fw-bold text-success-darkest">
+							مستشفى قوى الأمن
+						</h1>
+					</div>
+					<div class="col-3 text-end">
+						<img
+							class="header-right-img"
+							src="/assets/images/Qowa_Amn.jpg"
+							alt="" />
+					</div>
+				</div>
+			</header>
+			<hr class="m-1" />
+		</section>
+		<!-- //Header -->
+
+		<!-- Title -->
+		<section class="container">
+			<h1
+				class="horizontal-gradient rounded-5 p-3 fw-bold text-white my-4">
+				تسجيل حالة جديدة
+			</h1>
+		</section>
+		<!-- //Title -->
+
+		<!-- //Tabs Section -->
+		<section class="container">
+			<div class="row">
+				<!-- Tabs -->
+				<ul
+					class="nav p-0 border border-1 text-secondary rounded-3 border-success-dark overflow-hidden"
+					style="width: 467px; height: 40px">
+					<li
+						class="nav-item"
+						style="width: 155px; height: 40px">
+						<a
+							data-bs-toggle="tab"
+							class="nav-link active text-secondary"
+							href="#main-data-tab"
+							aria-current="page"
+							>البيانات الأساسية</a
+						>
+					</li>
+					<li
+						class="nav-item border-end border-start"
+						style="width: 155px; height: 40px">
+						<a
+							class="nav-link text-secondary"
+							data-bs-toggle="tab"
+							href="#case-info-tab"
+							>معلومات الحالة</a
+						>
+					</li>
+					<li
+						class="nav-item"
+						style="width: 155px; height: 40px">
+						<a
+							class="nav-link text-secondary"
+							data-bs-toggle="tab"
+							href="#procedures-teb"
+							>الإجراءات</a
+						>
+					</li>
+				</ul>
+				<!-- //Tabs -->
+
+				<!-- Tabs content -->
+				<form
+					action=""
+					method="post"
+					class="p-0 my-4">
+					<div
+						class="tab-content"
+						id="ex1-content">
+						<!-- Tab 1 -->
+						<div
+							class="tab-pane fade show active"
+							id="main-data-tab"
+							role="tabpanel"
+							aria-labelledby="ex1-tab-1">
+							<!-- بيانات الحالة -->
+							<div
+								class="border border-2 border-success-dark rounded-4 overflow-hidden">
+								<h5
+									class="text-success-darkest bg-success-light border-success-dark p-3 border-bottom">
+									بيانات الحالة
+								</h5>
+								<div class="row py-4 px-3">
+									<div class="col-3">
+										<label
+											for="case_number"
+											class="form-label text-secondary"
+											>رقم الحالة</label
+										>
+										<input
+											type="number"
+											id="case_number"
+											class="form-control form-control-lg" />
+									</div>
+									<div class="col-3">
+										<label
+											for="case_number"
+											class="form-label text-secondary"
+											>نوع الحالة</label
+										>
+										<select
+											class="form-select form-select-lg"
+											aria-label="Large select example">
+											<option selected>نوع الحالة</option>
+											<option value="1">حلوه</option>
+											<option value="2">نص نص</option>
+											<option value="3">
+												بايظه خالص
+											</option>
+										</select>
+									</div>
+									<div class="col-3">
+										<label
+											for="case_number"
+											class="form-label text-secondary"
+											>تاريخ الحالة</label
+										>
+										<input
+											class="form-control form-control-lg"
+											type="date" />
+									</div>
+									<div class="col-3">
+										<label
+											for="case_number"
+											class="form-label text-secondary"
+											>إسم الطبيب</label
+										>
+										<input
+											type="number"
+											id="case_number"
+											class="form-control form-control-lg" />
+									</div>
+								</div>
+							</div>
+							<!--// بيانات الحالة -->
+
+							<!-- بيانات المريض -->
+							<div
+								class="border border-2 border-success-dark rounded-4 overflow-hidden my-4">
+								<h5
+									class="text-success-darkest bg-success-light border-success-dark p-3 border-bottom">
+									بيانات المريض
+								</h5>
+								<div class="row py-4 px-3">
+									<!-- col 1 -->
+									<div class="col-4">
+										<div class="row">
+											<div class="mb-2">
+												<label
+													for="case_number"
+													class="form-label text-secondary"
+													>نوع الإثبات</label
+												>
+												<input
+													type="text"
+													id="case_number"
+													class="form-control form-control-lg" />
+											</div>
+											<div class="my-2">
+												<label
+													for="case_number"
+													class="form-label text-secondary"
+													>تاريخ الميلاد</label
+												>
+												<input
+													class="form-control form-control-lg"
+													type="date" />
+											</div>
+											<div class="my-2">
+												<label
+													for="case_number"
+													class="form-label text-secondary"
+													>الجنسية</label
+												>
+												<select
+													class="form-select form-select-lg"
+													aria-label="Large select example">
+													<option value="1">
+														منوفى
+													</option>
+													<option value="2">
+														مصرى
+													</option>
+													<option value="3">
+														سعودى
+													</option>
+												</select>
+											</div>
+											<div class="my-2">
+												<label
+													for="case_number"
+													class="form-label text-secondary"
+													>الوزن</label
+												>
+												<input
+													type="number"
+													id="case_number"
+													class="form-control form-control-lg" />
+											</div>
+										</div>
+									</div>
+
+									<!-- col 2 -->
+									<div class="col-4">
+										<div class="row">
+											<div class="mb-2">
+												<label
+													for="case_number"
+													class="form-label text-secondary"
+													>رقم الإثبات</label
+												>
+												<input
+													type="number"
+													id="case_number"
+													class="form-control form-control-lg" />
+											</div>
+											<div class="my-2">
+												<label
+													for="case_number"
+													class="form-label text-secondary"
+													>العمر</label
+												>
+												<input
+													type="number"
+													id="case_number"
+													class="form-control form-control-lg" />
+											</div>
+											<div class="my-2">
+												<label
+													for="case_number"
+													class="form-label text-secondary"
+													>طبيعة العمل</label
+												>
+												<input
+													type="text"
+													id="case_number"
+													class="form-control form-control-lg" />
+											</div>
+											<div class="my-2">
+												<label
+													for="case_number"
+													class="form-label text-secondary"
+													>الطول</label
+												>
+												<input
+													type="number"
+													id="case_number"
+													class="form-control form-control-lg" />
+											</div>
+										</div>
+									</div>
+									<!-- col 3 -->
+									<div class="col-4">
+										<div class="row">
+											<div class="mb-2">
+												<label
+													for="case_number"
+													class="form-label text-secondary"
+													>الإسم</label
+												>
+												<input
+													type="text"
+													id="case_number"
+													class="form-control form-control-lg" />
+											</div>
+											<div class="my-2">
+												<label
+													for="case_number"
+													class="form-label text-secondary"
+													>الجنس</label
+												>
+												<select
+													class="form-select form-select-lg"
+													aria-label="Large select example">
+													<option value="1">
+														ذكر
+													</option>
+													<option value="2">
+														أنثى
+													</option>
+													<option value="3">
+														أخرى
+													</option>
+												</select>
+											</div>
+											<div class="my-2">
+												<label
+													for="case_number"
+													class="form-label text-secondary"
+													>الرتبة</label
+												>
+												<select
+													class="form-select form-select-lg"
+													aria-label="Large select example">
+													<option value="1">
+														رتبه 1
+													</option>
+													<option value="2">
+														رتبة 2
+													</option>
+													<option value="3">
+														رتبة 3
+													</option>
+												</select>
+											</div>
+											<div class="my-2">
+												<label
+													for="case_number"
+													class="form-label text-secondary"
+													>فصيلة الدم</label
+												>
+												<select
+													class="form-select form-select-lg"
+													aria-label="Large select example">
+													<option value="1">A</option>
+													<option value="2">B</option>
+													<option value="3">
+														AB
+													</option>
+													<option value="4">O</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--// بيانات المريض -->
+
+							<!-- معلومات الإتصال -->
+							<div
+								class="border border-2 border-success-dark rounded-4 overflow-hidden my-4">
+								<h5
+									class="text-success-darkest bg-success-light border-success-dark p-3 border-bottom">
+									بيانات المريض
+								</h5>
+								<div class="row py-4 px-3">
+									<!-- col 1 -->
+									<div class="col-4">
+										<div class="mb-2">
+											<label
+												for="case_number"
+												class="form-label text-secondary"
+												>رقم الجوال</label
+											>
+											<input
+												type="text"
+												id="case_number"
+												class="form-control form-control-lg" />
+										</div>
+									</div>
+
+									<!-- col 2 -->
+									<div class="col-4">
+										<div class="mb-2">
+											<label
+												for="case_number"
+												class="form-label text-secondary"
+												>تحويلة المكتب</label
+											>
+											<input
+												type="number"
+												id="case_number"
+												class="form-control form-control-lg" />
+										</div>
+									</div>
+									<!-- col 3 -->
+									<div class="col-4">
+										<div class="mb-2">
+											<label
+												for="case_number"
+												class="form-label text-secondary"
+												>البريد الإلكترونى</label
+											>
+											<input
+												type="email"
+												id="case_number"
+												class="form-control form-control-lg" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--// معلومات الإتصال -->
+						</div>
+						<!-- //Tab 1 -->
+
+						<!-- Tab 2 -->
+						<div
+							class="tab-pane fade"
+							id="case-info-tab"
+							role="tabpanel"
+							aria-labelledby="ex1-tab-2">
+							<!-- العيادة -->
+							<div
+								class="border border-2 border-success-dark rounded-4 overflow-hidden my-4">
+								<h5
+									class="text-success-darkest bg-success-light border-success-dark p-3 border-bottom">
+									العيادة
+								</h5>
+								<div class="row py-4 px-3">
+									<div class="col-6">
+										<label
+											for="case_number"
+											class="form-label text-secondary"
+											>إسم العيادة</label
+										>
+										<input
+											type="text"
+											id="case_number"
+											class="form-control form-control-lg" />
+									</div>
+									<div class="col-6">
+										<label
+											for="case_number"
+											class="form-label text-secondary"
+											>طبيعة الحالة</label
+										>
+										<input
+											type="text"
+											id="case_number"
+											class="form-control form-control-lg" />
+									</div>
+								</div>
+							</div>
+							<!--// العيادة -->
+
+							<!-- الأعراض التى يعانى منها المريض -->
+							<div
+								class="border border-2 border-success-dark rounded-4 overflow-hidden my-4">
+								<h5
+									class="text-success-darkest bg-success-light border-success-dark p-3 border-bottom">
+									الأعراض التى يعانى منها المريض
+								</h5>
+								<div class="row py-4 px-3">
+									<div class="col-12">
+										<label
+											for="case_number"
+											class="form-label text-secondary"
+											>الأعراض</label
+										>
+										<textarea
+											type="text"
+											id="case_number"
+											rows="3"
+											class="form-control form-control-lg"></textarea>
+									</div>
+								</div>
+							</div>
+							<!--// الأعراض التى يعانى منها المريض -->
+
+							<!-- ملاحظات -->
+							<div
+								class="border border-2 border-success-dark rounded-4 overflow-hidden">
+								<h5
+									class="text-success-darkest bg-success-light border-success-dark p-3 border-bottom">
+									ملاحظات
+								</h5>
+								<div class="row py-4 px-3">
+									<div class="col-12">
+										<label
+											for="case_number"
+											class="form-label text-secondary"
+											>الملاحظات</label
+										>
+										<textarea
+											type="text"
+											id="case_number"
+											rows="3"
+											class="form-control form-control-lg"></textarea>
+									</div>
+								</div>
+							</div>
+							<!--// ملاحظات -->
+						</div>
+						<!-- //Tab 2 -->
+
+						<!-- Tab 3 -->
+						<div
+							class="tab-pane fade"
+							id="procedures-teb"
+							role="tabpanel"
+							aria-labelledby="ex1-tab-3">
+							<!-- الإجراءات التى تم إتخاذها للمريض -->
+							<div
+								class="border border-2 border-success-dark rounded-4 overflow-hidden">
+								<h5
+									class="text-success-darkest bg-success-light border-success-dark p-3 border-bottom">
+									الإجراءات التى تم إتخاذها للمريض
+								</h5>
+								<div class="row py-4 px-3">
+									<!-- col 1 -->
+									<div class="col-4">
+										<label
+											for="case_number"
+											class="form-label text-secondary"
+											>صور أشعة</label
+										>
+										<select
+											class="form-select form-select-lg"
+											aria-label="Large select example">
+											<option value="1">نعم</option>
+											<option value="2">لا</option>
+										</select>
+									</div>
+									<!-- col 2 -->
+									<div class="col-4">
+										<label
+											for="case_number"
+											class="form-label text-secondary"
+											>تخطيط قلب</label
+										>
+										<select
+											class="form-select form-select-lg"
+											aria-label="Large select example">
+											<option value="1">نعم</option>
+											<option value="2">لا</option>
+										</select>
+									</div>
+									<!-- col 3 -->
+									<div class="col-4">
+										<label
+											for="case_number"
+											class="form-label text-secondary"
+											>فحص مخبرى</label
+										>
+										<select
+											class="form-select form-select-lg"
+											aria-label="Large select example">
+											<option value="1">نعم</option>
+											<option value="2">لا</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<!--// الإجراءات التى تم إتخاذها للمريض -->
+							<!-- تحويل-->
+							<div
+								class="border border-2 border-success-dark rounded-4 overflow-hidden my-4">
+								<h5
+									class="text-success-darkest bg-success-light border-success-dark p-3 border-bottom">
+									تحويل
+								</h5>
+								<!-- radios -->
+								<div class="row py-4 px-3">
+									<!-- col 1 -->
+									<div class="col-3">
+										<label
+											for="case_number"
+											class="form-label text-secondary"
+											>هل تحتاج الحالة إلى تحويل</label
+										>
+									</div>
+									<!-- col 2 -->
+									<div class="col-9">
+										<div
+											class="form-check form-check-inline">
+											<input
+												class="form-check-input"
+												type="radio"
+												name="inlineRadioOptions"
+												id="inlineRadio1"
+												value="option1" />
+											<label
+												class="form-check-label"
+												for="inlineRadio1"
+												>نعم</label
+											>
+										</div>
+										<div
+											class="form-check form-check-inline">
+											<input
+												class="form-check-input"
+												type="radio"
+												name="inlineRadioOptions"
+												id="inlineRadio2"
+												value="option2" />
+											<label
+												class="form-check-label"
+												for="inlineRadio2"
+												>لا</label
+											>
+										</div>
+									</div>
+								</div>
+
+								<!-- Button trigger modal -->
+								<div class="container pb-4">
+									<button
+										type="button"
+										class="btn btn-lg px-4 py-2 btn-success"
+										data-bs-toggle="modal"
+										data-bs-target="#staticBackdrop">
+										تحويل
+
+										<svg
+											class="ms-3"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M8 12H16M12 16V8M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+												stroke="white"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+								<!-- //Button trigger modal -->
+
+								<!-- Table -->
+								<section class="container">
+									<table
+										class="table table-lg shadow rounded-4 overflow-hidden">
+										<thead class="">
+											<tr>
+												<th
+													class="p-3 text-white"
+													scope="col">
+													#
+												</th>
+												<th
+													class="p-3 text-white"
+													scope="col">
+													صنف التحويل
+												</th>
+												<th
+													class="p-3 text-white"
+													scope="col">
+													نوع التحويل
+												</th>
+												<th
+													class="p-3 text-white"
+													scope="col">
+													تاريخ الحالة
+												</th>
+												<th
+													class="p-3 text-white"
+													scope="col">
+													سبب التحويل
+												</th>
+												<th
+													class="p-3 text-white"
+													scope="col">
+													تعديل/عرض/حذف
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th
+													class="p-3 fw-normal"
+													scope="row">
+													1
+												</th>
+												<th class="p-3 fw-normal">
+													تحويل للجراحة
+												</th>
+												<th class="p-3 fw-normal">
+													جراحة سمنه
+												</th>
+												<th class="p-3 fw-normal">
+													01/02/2023
+												</th>
+												<th class="p-3 fw-normal">
+													معانا بالتنفس بالرئة والسبب
+													سمنة مفرطة
+												</th>
+												<th class="p-3 fw-normal">
+													<div class="row">
+														<div class="col-4">
+															<svg
+																width="24"
+																height="24"
+																viewBox="0 0 24 24"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M21 22.0001H3C2.59 22.0001 2.25 21.6601 2.25 21.2501C2.25 20.8401 2.59 20.5001 3 20.5001H21C21.41 20.5001 21.75 20.8401 21.75 21.2501C21.75 21.6601 21.41 22.0001 21 22.0001ZM19.02 3.48211C17.08 1.54211 15.18 1.49211 13.19 3.48211L11.98 4.69211C11.88 4.79211 11.84 4.95211 11.88 5.09211C12.2625 6.40449 12.9697 7.59923 13.9363 8.56583C14.9029 9.53242 16.0976 10.2397 17.41 10.6221C17.4809 10.6453 17.5568 10.6483 17.6293 10.6306C17.7017 10.6129 17.7678 10.5753 17.82 10.5221L19.02 9.31211C20.01 8.33211 20.49 7.38211 20.49 6.42211C20.5 5.43211 20.02 4.47211 19.02 3.48211ZM15.61 11.5301C15.32 11.3901 15.04 11.2501 14.77 11.0901C14.5507 10.9595 14.3371 10.8193 14.13 10.6701C13.96 10.5601 13.76 10.4001 13.57 10.2401C13.5088 10.1955 13.4519 10.1453 13.4 10.0901C13.07 9.81011 12.7 9.45011 12.37 9.05011C12.34 9.03011 12.29 8.96011 12.22 8.87011C12.12 8.75011 11.95 8.55011 11.8 8.32011C11.6575 8.13203 11.5272 7.93495 11.41 7.73011C11.25 7.46011 11.11 7.19011 10.97 6.91011C10.9492 6.86533 10.9288 6.82033 10.909 6.77511C10.761 6.44211 10.326 6.34511 10.069 6.60211L4.34 12.3311C4.21 12.4611 4.09 12.7111 4.06 12.8811L3.52 16.7111C3.42 17.3911 3.61 18.0311 4.03 18.4611C4.39 18.8111 4.89 19.0011 5.43 19.0011C5.55 19.0011 5.67 18.9911 5.79 18.9711L9.63 18.4311C9.81 18.4011 10.06 18.2811 10.18 18.1511L15.902 12.4301C16.162 12.1701 16.063 11.7251 15.726 11.5801C15.6873 11.5635 15.6486 11.5469 15.61 11.5301Z"
+																	fill="#316BFF" />
+															</svg>
+														</div>
+														<div class="col-4">
+															<svg
+																width="24"
+																height="24"
+																viewBox="0 0 24 24"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<g
+																	clip-path="url(#clip0_59_402)">
+																	<path
+																		d="M12 4C16.29 4 19.863 6.429 22.665 11.154L22.885 11.533L22.93 11.633L22.96 11.716L22.974 11.771L22.988 11.853L22.999 11.953V12.063L22.985 12.174C22.9785 12.2111 22.9698 12.2479 22.959 12.284L22.92 12.392L22.884 12.467L22.868 12.497C20.104 17.333 16.568 19.877 12.313 19.996L12 20C7.60404 20 3.96304 17.451 1.13204 12.496C1.04575 12.3449 1.00037 12.174 1.00037 12C1.00037 11.826 1.04575 11.6551 1.13204 11.504C3.96304 6.549 7.60404 4 12 4ZM12 9C11.2044 9 10.4413 9.31607 9.87872 9.87868C9.31611 10.4413 9.00004 11.2044 9.00004 12C9.00004 12.7956 9.31611 13.5587 9.87872 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7957 15 13.5588 14.6839 14.1214 14.1213C14.684 13.5587 15 12.7956 15 12C15 11.2044 14.684 10.4413 14.1214 9.87868C13.5588 9.31607 12.7957 9 12 9Z"
+																		fill="#29B5BF" />
+																</g>
+																<defs>
+																	<clipPath
+																		id="clip0_59_402">
+																		<rect
+																			width="24"
+																			height="24"
+																			fill="white" />
+																	</clipPath>
+																</defs>
+															</svg>
+														</div>
+														<div class="col-4">
+															<svg
+																width="24"
+																height="24"
+																viewBox="0 0 24 24"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<g
+																	clip-path="url(#clip0_59_394)">
+																	<path
+																		d="M20 6C20.2549 6.00028 20.5 6.09788 20.6854 6.27285C20.8707 6.44782 20.9822 6.68695 20.9972 6.94139C21.0121 7.19584 20.9293 7.44638 20.7657 7.64183C20.6021 7.83729 20.3701 7.9629 20.117 7.993L20 8H19.919L19 19C19 19.7652 18.7077 20.5015 18.1827 21.0583C17.6577 21.615 16.9399 21.9501 16.176 21.995L16 22H7.99999C6.40199 22 5.09599 20.751 5.00799 19.25L5.00299 19.083L4.07999 8H3.99999C3.74511 7.99972 3.49996 7.90212 3.31462 7.72715C3.12929 7.55218 3.01776 7.31305 3.00282 7.05861C2.98788 6.80416 3.07067 6.55362 3.23426 6.35817C3.39785 6.16271 3.62989 6.0371 3.88299 6.007L3.99999 6H20Z"
+																		fill="#FF1E6F" />
+																	<path
+																		d="M14 2C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4C15.9997 4.25488 15.9021 4.50003 15.7272 4.68537C15.5522 4.8707 15.313 4.98223 15.0586 4.99717C14.8042 5.01211 14.5536 4.92933 14.3582 4.76574C14.1627 4.60214 14.0371 4.3701 14.007 4.117L14 4H10L9.993 4.117C9.9629 4.3701 9.83729 4.60214 9.64183 4.76574C9.44638 4.92933 9.19584 5.01211 8.94139 4.99717C8.68695 4.98223 8.44782 4.8707 8.27285 4.68537C8.09788 4.50003 8.00028 4.25488 8 4C7.99984 3.49542 8.19041 3.00943 8.5335 2.63945C8.87659 2.26947 9.34685 2.04284 9.85 2.005L10 2H14Z"
+																		fill="#FF1E6F" />
+																</g>
+																<defs>
+																	<clipPath
+																		id="clip0_59_394">
+																		<rect
+																			width="24"
+																			height="24"
+																			fill="white" />
+																	</clipPath>
+																</defs>
+															</svg>
+														</div>
+													</div>
+												</th>
+											</tr>
+											<tr class="tr-green">
+												<th
+													class="p-3"
+													scope="row">
+													2
+												</th>
+												<th class="p-3 fw-normal">
+													تحويل للجراحة
+												</th>
+												<th class="p-3 fw-normal">
+													جراحة سمنه
+												</th>
+												<th class="p-3 fw-normal">
+													12/12/2022
+												</th>
+												<th class="p-3 fw-normal">
+													معانا بالتنفس بالرئة والسبب
+													سمنة مفرطة
+												</th>
+												<th class="p-3 fw-normal">
+													<div class="row">
+														<div class="col-4">
+															<svg
+																width="24"
+																height="24"
+																viewBox="0 0 24 24"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M21 22.0001H3C2.59 22.0001 2.25 21.6601 2.25 21.2501C2.25 20.8401 2.59 20.5001 3 20.5001H21C21.41 20.5001 21.75 20.8401 21.75 21.2501C21.75 21.6601 21.41 22.0001 21 22.0001ZM19.02 3.48211C17.08 1.54211 15.18 1.49211 13.19 3.48211L11.98 4.69211C11.88 4.79211 11.84 4.95211 11.88 5.09211C12.2625 6.40449 12.9697 7.59923 13.9363 8.56583C14.9029 9.53242 16.0976 10.2397 17.41 10.6221C17.4809 10.6453 17.5568 10.6483 17.6293 10.6306C17.7017 10.6129 17.7678 10.5753 17.82 10.5221L19.02 9.31211C20.01 8.33211 20.49 7.38211 20.49 6.42211C20.5 5.43211 20.02 4.47211 19.02 3.48211ZM15.61 11.5301C15.32 11.3901 15.04 11.2501 14.77 11.0901C14.5507 10.9595 14.3371 10.8193 14.13 10.6701C13.96 10.5601 13.76 10.4001 13.57 10.2401C13.5088 10.1955 13.4519 10.1453 13.4 10.0901C13.07 9.81011 12.7 9.45011 12.37 9.05011C12.34 9.03011 12.29 8.96011 12.22 8.87011C12.12 8.75011 11.95 8.55011 11.8 8.32011C11.6575 8.13203 11.5272 7.93495 11.41 7.73011C11.25 7.46011 11.11 7.19011 10.97 6.91011C10.9492 6.86533 10.9288 6.82033 10.909 6.77511C10.761 6.44211 10.326 6.34511 10.069 6.60211L4.34 12.3311C4.21 12.4611 4.09 12.7111 4.06 12.8811L3.52 16.7111C3.42 17.3911 3.61 18.0311 4.03 18.4611C4.39 18.8111 4.89 19.0011 5.43 19.0011C5.55 19.0011 5.67 18.9911 5.79 18.9711L9.63 18.4311C9.81 18.4011 10.06 18.2811 10.18 18.1511L15.902 12.4301C16.162 12.1701 16.063 11.7251 15.726 11.5801C15.6873 11.5635 15.6486 11.5469 15.61 11.5301Z"
+																	fill="#316BFF" />
+															</svg>
+														</div>
+														<div class="col-4">
+															<svg
+																width="24"
+																height="24"
+																viewBox="0 0 24 24"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<g
+																	clip-path="url(#clip0_59_402)">
+																	<path
+																		d="M12 4C16.29 4 19.863 6.429 22.665 11.154L22.885 11.533L22.93 11.633L22.96 11.716L22.974 11.771L22.988 11.853L22.999 11.953V12.063L22.985 12.174C22.9785 12.2111 22.9698 12.2479 22.959 12.284L22.92 12.392L22.884 12.467L22.868 12.497C20.104 17.333 16.568 19.877 12.313 19.996L12 20C7.60404 20 3.96304 17.451 1.13204 12.496C1.04575 12.3449 1.00037 12.174 1.00037 12C1.00037 11.826 1.04575 11.6551 1.13204 11.504C3.96304 6.549 7.60404 4 12 4ZM12 9C11.2044 9 10.4413 9.31607 9.87872 9.87868C9.31611 10.4413 9.00004 11.2044 9.00004 12C9.00004 12.7956 9.31611 13.5587 9.87872 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7957 15 13.5588 14.6839 14.1214 14.1213C14.684 13.5587 15 12.7956 15 12C15 11.2044 14.684 10.4413 14.1214 9.87868C13.5588 9.31607 12.7957 9 12 9Z"
+																		fill="#29B5BF" />
+																</g>
+																<defs>
+																	<clipPath
+																		id="clip0_59_402">
+																		<rect
+																			width="24"
+																			height="24"
+																			fill="white" />
+																	</clipPath>
+																</defs>
+															</svg>
+														</div>
+														<div class="col-4">
+															<svg
+																width="24"
+																height="24"
+																viewBox="0 0 24 24"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<g
+																	clip-path="url(#clip0_59_394)">
+																	<path
+																		d="M20 6C20.2549 6.00028 20.5 6.09788 20.6854 6.27285C20.8707 6.44782 20.9822 6.68695 20.9972 6.94139C21.0121 7.19584 20.9293 7.44638 20.7657 7.64183C20.6021 7.83729 20.3701 7.9629 20.117 7.993L20 8H19.919L19 19C19 19.7652 18.7077 20.5015 18.1827 21.0583C17.6577 21.615 16.9399 21.9501 16.176 21.995L16 22H7.99999C6.40199 22 5.09599 20.751 5.00799 19.25L5.00299 19.083L4.07999 8H3.99999C3.74511 7.99972 3.49996 7.90212 3.31462 7.72715C3.12929 7.55218 3.01776 7.31305 3.00282 7.05861C2.98788 6.80416 3.07067 6.55362 3.23426 6.35817C3.39785 6.16271 3.62989 6.0371 3.88299 6.007L3.99999 6H20Z"
+																		fill="#FF1E6F" />
+																	<path
+																		d="M14 2C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4C15.9997 4.25488 15.9021 4.50003 15.7272 4.68537C15.5522 4.8707 15.313 4.98223 15.0586 4.99717C14.8042 5.01211 14.5536 4.92933 14.3582 4.76574C14.1627 4.60214 14.0371 4.3701 14.007 4.117L14 4H10L9.993 4.117C9.9629 4.3701 9.83729 4.60214 9.64183 4.76574C9.44638 4.92933 9.19584 5.01211 8.94139 4.99717C8.68695 4.98223 8.44782 4.8707 8.27285 4.68537C8.09788 4.50003 8.00028 4.25488 8 4C7.99984 3.49542 8.19041 3.00943 8.5335 2.63945C8.87659 2.26947 9.34685 2.04284 9.85 2.005L10 2H14Z"
+																		fill="#FF1E6F" />
+																</g>
+																<defs>
+																	<clipPath
+																		id="clip0_59_394">
+																		<rect
+																			width="24"
+																			height="24"
+																			fill="white" />
+																	</clipPath>
+																</defs>
+															</svg>
+														</div>
+													</div>
+												</th>
+											</tr>
+										</tbody>
+									</table>
+								</section>
+								<!-- //Table -->
+
+								<!-- Modal -->
+								<div
+									class="modal fade"
+									id="staticBackdrop"
+									data-bs-backdrop="static"
+									data-bs-keyboard="false"
+									tabindex="-1"
+									aria-labelledby="staticBackdropLabel"
+									aria-hidden="true">
+									<div
+										class="modal-dialog modal-xl modal-dialog-centered">
+										<div
+											class="modal-content rounded-4 overflow-hidden">
+											<div
+												class="p-3 horizontal-gradient">
+												<div class="row">
+													<h1
+														class="modal-title fs-5 text-center"
+														id="exampleModalLabel">
+														Modal title
+													</h1>
+													<button
+														type="button"
+														class="btn-close position-absolute"
+														data-bs-dismiss="modal"
+														aria-label="Close"></button>
+												</div>
+											</div>
+											<div class="modal-body">...</div>
+											<div class="modal-footer">
+												<button
+													type="button"
+													class="btn btn-secondary"
+													data-bs-dismiss="modal">
+													Close
+												</button>
+												<button
+													type="button"
+													class="btn btn-primary">
+													Save changes
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //Modal -->
+							</div>
+							<!--// تحويل-->
+							<!-- متابعة-->
+							<div
+								class="border border-2 border-success-dark rounded-4 overflow-hidden my-4">
+								<h5
+									class="text-success-darkest bg-success-light border-success-dark p-3 border-bottom">
+									متابعة
+								</h5>
+								<div class="row py-4 px-3">
+									<!-- col 1 -->
+									<div class="col-3">
+										<label
+											for="case_number"
+											class="form-label text-secondary"
+											>هل تحتاج الحالة إلى متابعة</label
+										>
+									</div>
+									<!-- col 2 -->
+									<div class="col-9">
+										<div
+											class="form-check form-check-inline">
+											<input
+												class="form-check-input"
+												type="radio"
+												name="inlineRadioOptions"
+												id="inlineRadio1"
+												value="option1" />
+											<label
+												class="form-check-label"
+												for="inlineRadio1"
+												>نعم</label
+											>
+										</div>
+										<div
+											class="form-check form-check-inline">
+											<input
+												class="form-check-input"
+												type="radio"
+												name="inlineRadioOptions"
+												id="inlineRadio2"
+												value="option2" />
+											<label
+												class="form-check-label"
+												for="inlineRadio2"
+												>لا</label
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--// متابعة-->
+						</div>
+						<!-- //Tab 3 -->
+					</div>
+				</form>
+			</div>
+			<!-- Tabs navigation buttons -->
+			<div class="row mb-5">
+				<div class="col-6">
+					<button class="btn btn-lg px-5 me-3 btn-info">
+						التالى
+					</button>
+					<button class="btn btn-lg px-5 ms-3 btn-outline-info">
+						السابق
+					</button>
+				</div>
+				<div class="col-6 text-end">
+					<button class="btn btn-lg px-5 me-3 btn-success">
+						حفظ كمسوده
+					</button>
+					<button class="btn btn-lg px-5 ms-3 btn-outline-danger">
+						إالغاء
+					</button>
+				</div>
+			</div>
+			<!-- //Tabs navigation buttons -->
+		</section>
+
+		<!-- //End body -->
+
+		<!-- Bootstrap js -->
+		<!--   -Local copy -->
+		<script src="/assets/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+		<script src="/assets/scripts.js"></script>
+		<!--   -CDN copy -->
+		<!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script> -->
+		<!-- //Bootstrap js -->
+		<a href="/available_services.html">available_services</a>
+		<br />
+		<a href="/login.html">register_new_case</a>
+	</body>
+</html>
